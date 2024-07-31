@@ -1,0 +1,75 @@
+
+Algorithms Vs Program:
+    -> both of them are, by definition, a "step-by-step procedure of solving a computetional problem!".
+
+Algorithms
+    - written at Design time, a psudo-code of how the program will be, usually in simple language (and mathematical notations) in notepad or text.
+    - written by a person with the knowledge of the domain on which the product will be used on.
+    - H/w & OS independent! 
+    - Analyze: its efficiency in terms time and space complexities.
+Program
+    - written at Implementation time, converting a design; with suitable programing laguage.
+    - will be written by a programmer, not necessary to have domain knowledge.
+    - gonna be H/w & OS dependent, depending on what harware and os will the product run on
+    - Testing: checking if its working as expected
+
+=============================================================================================================
+Priori Analysis:
+    -> Testing Benchmark for Algorithms in terms of Time and Space complexities.
+    -> written in any laguage and are hardware independent.
+Postriori Testing:
+    -> Testing Benchmark for Programs in terms of watch time and Bytes.
+    -> written in specific laguage and are harware dependent.
+=============================================================================================================
+
+Charactestics of Algorithms:
+    1. Input - takes 0 or more.
+    2. Output - returns at least one. (means does SOMETHING!)
+    3. Definiteness - every statement should be clear and simple to understand.
+    4. Finiteness - Must terminate at some point; duration should be finite.
+    5. Effectiveness - the statement you write should server something; DONT write unnecessary statement
+=============================================================================================================
+
+How to write and Analyze an Algorithm:
+    -> Dont worry about program specific things like variable decleration, function definition, datatypes and return types;
+1. Time complexity:
+    -> how much time is it taking to return the result.
+    -> the faster the better!
+    -> we get it in a Time function.
+2. Space complexity:
+    -> as the Algorithm will become a program and run in a machine, we need to know how much space is it consuming!
+    -> the smaller the better!
+
+Other Criteria to consider
+3. Network:
+    -> depending on whether the program is Web based, cloud based or Internet based, so we need to consider its network consumption for data transfer.
+4. Power consuming.
+5. CPU registers.
+
+=============================================================================================================
+
+* we can use Frequency count method to find both time and space complexity of a function
+    -> every statement takes 1 unite of time to be executed -- constant time O(1).
+    -> every variable is created, local or global is also O(1);
+    -> whatever statement that is inside a loop will be executed N times -- thus, O(n);
+        - if its a nested-loop, it multiplies by N -- thus, O(n2).
+    -> we can add all the time/space taken/used by each statement and add it to get the over all complexity of the function
+    -> and then we take the highest polynomial degree to get the Order of the function
+
+* Classes of Time Complexity:
+    A. O(1) -- constant time, not dependent on the size of the input.
+    B. O(log n) -- logarithmic
+    C. O(n) -- linear
+    B. O(n log n) -- linear-logarithmic
+    D. O(n**2) -- quadratic
+    E. O(n**3) -- Cubic
+    F. O(k**n) -- Exponential
+        ## 1 < log n < √n < n < n log n < n**k < k**n
+
+* Asymptotic notations:
+    - mathematical notation used to describe/express the behaviour of an algorithm as the input aproaches infinity.
+    - used to analyze algorithm efficiency based on the term that is growing faster or at the dominant term.
+    1. Big O notation (O): notation that that describes the upper-bound (worst-case) of an algorithms time and space complexity;
+        > meaning, the algorithm will not perform worse than this as the input gets bigger and bigger.
+    2. Omega notation (Ω): describes the lower-bound (best-case); it indecates that the algorithm will not perform better than this at any input size.
+    2. Theta notation (Θ): average bound; it takes both upper bound and lower bound when they are the same.
